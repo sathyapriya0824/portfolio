@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships | S. Sathya Priya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: #050816;
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .glass {
+            background: rgba(11, 17, 32, 0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 245, 255, 0.2);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: linear-gradient(to right, #00f5ff, #a855f7);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after { width: 100%; }
+
+        .intern-card {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .intern-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 30px 60px -15px rgba(0, 245, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-cyan-500/30">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center text-white font-bold text-3xl shadow-lg">SP</div>
+                <span class="text-2xl font-semibold">Sathya Priya</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="home.html" class="nav-link text-gray-300 hover:text-white">Home</a>
+                <a href="about.html" class="nav-link text-gray-300 hover:text-white">About</a>
+                <a href="journey.html" class="nav-link text-gray-300 hover:text-white">Journey</a>
+                <a href="skills.html" class="nav-link text-gray-300 hover:text-white">Skills</a>
+                <a href="projects.html" class="nav-link text-gray-300 hover:text-white">Projects</a>
+                <a href="certifications.html" class="nav-link text-gray-300 hover:text-white">Certifications</a>
+                <a href="internships.html" class="nav-link text-cyan-400">Internships</a>
+                <a href="cyberlab.html" class="nav-link text-gray-300 hover:text-white">Cyber Lab</a>
+                <a href="contact.html" class="nav-link text-gray-300 hover:text-white">Contact</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <a href="https://drive.google.com/your-resume-link" target="_blank"
+                   class="px-6 py-3 bg-white text-black rounded-2xl font-semibold hover:bg-cyan-400 hover:text-white transition-all flex items-center gap-2">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="pt-28 pb-16 bg-gradient-to-b from-[#050816] to-[#0B1120]">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-6xl md:text-7xl font-bold tracking-tighter mb-4">Internships</h1>
+            <p class="text-xl text-gray-400">Practical experience that shaped my Cyber Security journey</p>
+        </div>
+    </section>
+
+    <div class="max-w-7xl mx-auto px-6 py-16 flex-1">
+        <div class="space-y-12">
+
+            <!-- CodeAlpha Internship -->
+            <div class="intern-card glass border border-cyan-500/30 rounded-3xl p-8 md:p-10">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-20 h-20 bg-gradient-to-br from-red-500 to-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                        <span class="text-4xl">🔒</span>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                            <div>
+                                <h3 class="text-2xl font-semibold">Cyber Security Intern</h3>
+                                <p class="text-cyan-400 text-lg">CodeAlpha</p>
+                            </div>
+                            <p class="text-sm text-emerald-400 font-medium">1 Month</p>
+                        </div>
+                        <p class="text-gray-400 mt-4">Gained hands-on experience in cybersecurity concepts with focus on practical learning and real-world applications.</p>
+                        <div class="mt-6 flex flex-wrap gap-2">
+                            <span class="px-4 py-1.5 bg-cyan-900/50 text-cyan-300 text-sm rounded-full">Phishing Awareness Training</span>
+                            <span class="px-4 py-1.5 bg-cyan-900/50 text-cyan-300 text-sm rounded-full">Secure Coding Review</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CODEC Internship -->
+            <div class="intern-card glass border border-cyan-500/30 rounded-3xl p-8 md:p-10">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                        <span class="text-4xl">🛡️</span>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                            <div>
+                                <h3 class="text-2xl font-semibold">Cyber Security Intern</h3>
+                                <p class="text-cyan-400 text-lg">CODEC</p>
+                            </div>
+                            <p class="text-sm text-emerald-400 font-medium">1 Month</p>
+                        </div>
+                        <p class="text-gray-400 mt-4">Practical exposure to various security concepts and tools. Learned real-world cybersecurity workflows and best practices.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+     <!-- COMMON PREMIUM FOOTER -->
+    <footer class="glass border-t border-cyan-500/30 py-16 mt-auto">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12">
+                
+                <!-- Left Section -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center text-white font-bold text-3xl">SP</div>
+                        <h3 class="text-3xl font-bold tracking-tight">S. SATHYA PRIYA</h3>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                         Passionate Computer Science and Engineering (Cyber Security) student focused on developing 
+                        secure digital solutions, learning emerging technologies, and building innovative projects.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-cyan-400">Quick Links</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="home.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="journey.html" class="hover:text-white transition-colors">Journey</a></li>
+                        <li><a href="skills.html" class="hover:text-white transition-colors">Skills</a></li>
+                        <li><a href="projects.html" class="hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="certifications.html" class="hover:text-white transition-colors">Certifications</a></li>
+                        <li><a href="internships.html" class="hover:text-white transition-colors">Internships</a></li>
+                        <li><a href="cyberlab.html" class="hover:text-white transition-colors">Cyber Lab</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-cyan-400">Get In Touch</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li>
+                            <a href="mailto:sathyapriya0824@gmail.com" class="flex items-center gap-3 hover:text-cyan-400 transition-colors">
+                                <span class="text-2xl">📧</span>
+                                sathyapriya0824@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/sathyapriya0824" target="_blank" class="flex items-center gap-3 hover:text-cyan-400 transition-colors">
+                                <span class="text-2xl">💻</span>
+                                GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/sathya-priya-sampath-6623a9386/" target="_blank" class="flex items-center gap-3 hover:text-cyan-400 transition-colors">
+                                <span class="text-2xl">🔗</span>
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-cyan-500/20 mt-16 pt-8 text-center text-sm text-gray-500">
+                © 2026 S. Sathya Priya. All Rights Reserved. | Built with ❤️ by S. Sathya Priya
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
